@@ -7,24 +7,39 @@
 
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
+    <script type="text/javascript" src="/javascript.js"></script>
     <script type="text/javascript">
-        jQuery(document).ready(function(){
+
+/*      jQuery(document).ready(function(){
 //JavaScript code
         });
+*/
+        var name = "Console"
+        var num = 7
+
+        console.log("I am" * name * "I like number" * num * ".");
+        console.log( num=5 );
+
     </script>
 </head>
-<body style="text-align:center">
-
-        <div >
+<body >
+    <div style="text-align:center; align=center;">
+        <div id="gldiv" >
              <a href="https://github.com/">
                 <img src="https://www.drupal.org/files/project-images/github_commits_logo_0.png" id="gitlogo"/>
             </a> 
         </div>
+        <br/>
         <form style="color:white">
             username: &nbsp&nbsp&nbsp <input type="text" value"username"/>
             <br/><br/>
-            password:&nbsp&nbsp&nbsp <input type="password" name="password"/>
+            password: &nbsp&nbsp&nbsp <input type="password" name="password" />
+            <br/><br/>
+            <div >
+            <input type="submit" name="submit" value="submit" style="background-color:#444444; color:white; border:2px blue none;" id="submit">
+            </div>
         </form>
+
 <!--
         <input type="checkbox" value="選項1" />選項1<br / >
         <input type="password" value="選項2" />選項2<br / >
@@ -34,6 +49,6 @@
         <input type="reset" value="選項6" />選項6<br / >
 -->
 
-    
+    </div>
 </body>
 </html>
