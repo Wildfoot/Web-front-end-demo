@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
     <script type="text/javascript" src="./javascript.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./facebook-sdk.js"></script>
 <!--    <script type="text/javascript">
 
 /*      jQuery(document).ready(function(){
@@ -23,7 +25,13 @@
     </script>
 -->
 </head>
-<body >
+<body>
+
+
+
+
+
+
     <div style="text-align:center; align=center;">
         <div id="gldiv" >
              <a href="https://github.com/">
@@ -37,7 +45,7 @@
             password: &nbsp&nbsp&nbsp <input type="password" name="password" />
             <br/><br/>
             <div >
-            <input type="submit" name="submit" value="submit" style="background-color:#444444; color:white; border:2px blue none;" id="submit" onclick="alert(">
+            <input type="submit" name="submit" value="submit" style="background-color:#444444; color:white; border:2px blue none;" id="submit" onclick=alert("Register")>
             </div>
         </form>
 
@@ -54,12 +62,26 @@
             dmobject.dmfunction();
         </script>
 -->
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             console.log(document.title);
             console.log(document.getElementById(submit));
         </script>
+-->
+        <input type="buttom" value="add" style="background-color:#444444; color:white; border:2px blue none;" onclick=addfun()>
+        <input type="buttom" value="remove" style="background-color:#444444; color:white; border:2px blue none;" onclick='remfun()'>
+        <div id="addiv">
+        <br/>
+        <input type="text" id="text1" style="background-color:#444444; color:white; border:2px blue none;"> 
+        <br/><br/>
+        <input type="text" id="test2" style="background-color:#444444; color:white; border:2px blue none;">
+        </div>
 
-
+        <script>
+            FB.getSitconInfo(function (res)
+            {
+                console.log(res);
+            });
+        </script>
 
     </div>
 </body>

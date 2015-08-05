@@ -29,3 +29,23 @@ dmobject.dmfunction();
 console.log( dmobject.number );
 console.log( dmobject.name );
 */
+/*function load()
+{
+	console.log("inload");
+
+	var Documenttest1 = document.getElementById("testinput");
+}*/
+
+
+//var newbottom = 0;
+
+
+function addfun()
+{
+	$('#addiv').append('<input type="buttom" value="test" class="newbottom" style="background-color:white; color:green; border:none;">')
+	newbottom++;
+}
+function remfun()
+{
+	$('.newbottom').remove()
+}
