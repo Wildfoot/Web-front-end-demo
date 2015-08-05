@@ -37,7 +37,7 @@
             password: &nbsp&nbsp&nbsp <input type="password" name="password" />
             <br/><br/>
             <div >
-            <input type="submit" name="submit" value="submit" style="background-color:#444444; color:white; border:2px blue none;" id="submit">
+            <input type="submit" name="submit" value="submit" style="background-color:#444444; color:white; border:2px blue none;" id="submit" onclick="alert(">
             </div>
         </form>
 
@@ -54,6 +54,10 @@
             dmobject.dmfunction();
         </script>
 -->
+        <script type="text/javascript">
+            console.log(document.title);
+            console.log(document.getElementById(submit));
+        </script>
 
 
 
