@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS Box model demo page</title>
+    <meta name="description" content="A CSS box model demo page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="bootstrap.css" rel="stylesheet" >-->
+    <link href="color.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--<script src="js/jquery-1.11.2.min.js"></script>-->
+    <!--<script src="js/bootstrap.js"></script>-->
+</head>
+<body>
+    <div class="elem">
+        <span class="label">&lt;div class="static"&gt;</span>
+            <p>
+                <code>static</code> 是預設值。任何套用 <code>position: static;</code> 的元素「不會被特別定位」在頁面上特定位置，而是照著瀏覽器預設的配置自動排版在頁面上，所有其他的屬性值都代表該元素會被定位在頁面上。
+            </p>
+        <span class="endlabel">&lt;/div&gt;</span>
+    </div> 
+
+    <style>
+    .fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        z-index: 9999;
+    }
+    </style>
+    <div class="fixed elem elem-green">
+        <span class="label">&lt;div class="fixed"&gt;</span>
+            <p>
+                哈囉～ 先不要太關注我！
+            </p>
+        <span class="endlabel">&lt;/div&gt;</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body
+{
+	    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(99%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0)));*/
+    background-color: black;
+}
+
+#gitlogo
+{
+	width:200px;
+	height:200px;
+	border:5px #cccccc;
+}
+
+#submit:hover
+{
+	text-align:right;
+    background-color:#444444;
+}
+#gldiv:hover
+{
+	border: 5px #cccccc dashed;
+		width:200px; height:200px;
+}
+
+#gldiv
+{
+
+}
+

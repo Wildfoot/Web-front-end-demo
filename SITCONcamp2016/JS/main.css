@@ -1,0 +1,62 @@
+div.avatar > img {
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+div.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 10px lightblue;
+    max-width: 300px;
+    margin: 0 auto;
+}
+div {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Noto Sans CJK TC', sans-serif;
+    line-height: 30px;
+    text-decoration: underline;
+}
+#monospace{
+    font-family: monospace, sans-serif;
+}
+
+#fantasy{
+    font-family: fantasy, sans-serif;
+}
+
+div.transition {
+    width: 100px;
+    height: 100px;
+    background: black;
+    opacity: 0.1;
+    transition: opacity 1s;
+}
+div.transition:hover {
+    opacity: 1;
+}
+div.animation {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+}
+div.animation:hover {
+    animation: anima 5s;
+    animation-fill-mode: none;
+}
+
+@keyframes anima {
+    from {
+        background: orange;
+    }
+    to {
+        background: green;
+    }
+}
+
+input#rred {
+    background-color: red;
+}

@@ -1,0 +1,30 @@
+#Demo1 {
+    width: 600px;  /*當視窗比元素寬度窄 會出現水平捲軸*/
+    margin: 0 auto;  /*left & right auto -> 水平居中*/
+}
+#Demo2 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#Demo3 {
+    width: 500px;
+    margin: 20px auto;
+}
+#Demo4 {
+    width: 500px;
+    margin: 20px auto;      /*外外框*/
+    padding: 50px;          /*內框*/
+    border-width: 10px;     /*邊框寬度*/
+}
+
+#Demo5B {
+    position: relative; /*相對定位 不會影響其他元素*/
+}
+#Demo5l {
+    position: absolute; /*定位參考：上層容器 */
+    left: 0px;
+    width: 200px;
+}
+.Demo5R{
+    margin:0px 0px 0px 200px; /*上 右 下 左*/
+}

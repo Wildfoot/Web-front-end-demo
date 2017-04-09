@@ -1,0 +1,12 @@
+#ul1{
+    font-family: "Times New Roman", Times, serif;
+    background-color:#00FF00;
+    color : green;
+}
+#ul1 > li{
+
+    background-color:#00FFFF;
+}
+.cry{
+    color:red;
+}

@@ -1,0 +1,21 @@
+div#notfound {
+    max-width: 500px;
+    /*background-color: red;*/
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+}
+
+div#notfound > h1 {
+    font-size: 50px;
+    position: relative;
+}
+
+div#back {
+    max-width: 100px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+}

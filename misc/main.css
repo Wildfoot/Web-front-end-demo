@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: white;
+}
+
+.space {
+    width: 99vw; /*螢幕可視範寬度的百分比*/
+    height: 80vh; /*螢幕可視範圍高度的百分比*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    perspective: 400px;
+    perspective-origin: center center;
+    outline: 10px solid black;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    /*讓子元素以3D呈現*/
+    
+
+    animation: jump 1.8s -0.2s infinite ease-out alternate;
+    /*top: 0*/       
+
+}
+
+.surface {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    outline: 1px solid black;
+    text-align: center;
+    line-height: 100px;
+}
+
+.box .left {
+    transform: rotateY(90deg) translateZ(50px);
+    background-color: green;
+}
+.box .front {
+    transform: rotateX(0deg) translateZ(50px);
+}
+
+.box .back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.box .top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.box .down {
+    transform: rotateX(270deg) translateZ(50px);
+}
+.box .right {
+    transform: rotateY(270deg) translateZ(50px);
+}
+.ground {
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    background-color: brown;
+    transform:  rotateX(90deg) 
+                translateY(-250px) 
+                translateZ(-250px);
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0px) translateZ(-150px) rotateY(0deg) scale(1);
+    }
+    100% {
+        transform: translateY(-300px) translateZ(-150px)rotateY(360deg) scale(0.5);
+    }
+}
+.wall {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+}
+.box{
+    /*left:0;*/
+    /*right:0*/
+}
+.wall:nth-child(3n) .box {
+    animation: jump 2s 0s infinite ease-out alternate;
+}
+
+.wall:nth-child(3n+1) .box {
+    animation: jump 1s -1.5s infinite ease-out alternate;
+}
+
+.wall:nth-child(3n+2) .box {
+    animation: jump 1.5s -1s infinite ease-out alternate;
+}
+.box .front {
+    transform: rotateX(0deg) translateZ(50px);
+    background-image: radial-gradient(red 10%, black);
+}
+
+.box .back {
+    transform: rotateY(180deg) translateZ(50px);
+    background-image: linear-gradient(green 10%, black);
+}
+
+.box .top {
+    transform: rotateX(90deg) translateZ(50px);
+    background-image: repeating-radial-gradient(yellow 10%, black);
+}
+
+.box .down {
+    transform: rotateX(270deg) translateZ(50px);
+    background-image: repeating-linear-gradient(blue 10%, black);
+}
