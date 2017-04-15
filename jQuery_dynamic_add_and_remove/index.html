@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Base html </title>
+    <meta name="description" content="A Base html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="bootstrap.css" rel="stylesheet" >-->
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--<script src="js/bootstrap.js"></script>-->
+    <script src="../include/js/jquery-3.2.0.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="action-body">
+      <form method="post">
+        <button id="add-new">+ Add</button>
+        <ul class="dynamic-list-container">
+          <!-- loop -->
+          <li class="dynamic-list-item sortable">
+            <span class="drag-handle"> :: </span>
+            <input name="dyn_val[temp_id][]" type="hidden" value="1">
+            <input name="dynamic-item-name" value=""> 
+            <select name="dynamic-item-sex">
+              <option value="">--Please Select--</option>
+              <option value="f">Female</option>
+              <option value="m">Male</option>
+            </select>
+            <button class="clone-one">+ clone</button>
+            <button class="remove-one">- remove</button>
+          </li>
+          <!-- loop end -->
+        </ul>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+</body>
+</html>
